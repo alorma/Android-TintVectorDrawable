@@ -15,10 +15,16 @@ class MainActivity : AppCompatActivity() {
         val context2 = ContextThemeWrapper(this, R.style.AnotherTheme)
 
         findViewById<ImageView>(R.id.imageByCode1).setImageDrawable(
-          ContextCompat.getDrawable(context1, R.drawable.ic_5g)
+            ContextCompat.getDrawable(context1, R.drawable.ic_5g)
+        )
+        findViewById<ImageView>(R.id.imageMarkerByCode1).setImageDrawable(
+            ContextCompat.getDrawable(context1, R.drawable.ic_marker)
         )
         findViewById<ImageView>(R.id.imageByCode2).setImageDrawable(
-          ContextCompat.getDrawable(context2, R.drawable.ic_5g)
+            ContextCompat.getDrawable(context2, R.drawable.ic_5g)
+        )
+        findViewById<ImageView>(R.id.imageMarkerByCode2).setImageDrawable(
+            ContextCompat.getDrawable(context2, R.drawable.ic_marker)
         )
     }
 }
